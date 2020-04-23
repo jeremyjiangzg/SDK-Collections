@@ -1,0 +1,14 @@
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories.mavenDeployer {
+        snapshotRepository(url: "http://nexus.xiaoheiban.cn/repository/component-snapshots/") {
+            authentication(userName: "develop", password: "xhb123")
+        }
+        pom.name = "xhb-component"
+        pom.groupId = "com.xhb.component"
+        pom.artifactId = "auto-extract-date"
+        pom.version = "1.0.0-SNAPSHOT"
+        pom.packaging = 'aar'
+    }
+}
