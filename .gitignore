@@ -19,7 +19,7 @@ release/
 
 # Gradle files
 .gradle/
-build/
+*/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -38,12 +38,18 @@ captures/
 
 # IntelliJ
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/assetWizardSettings.xml
-.idea/dictionaries
-.idea/libraries
+*.ipr
+*.iws
+.idea/
+.gradle/
+app/.gradle/
+*.properties
+
+gradle.properties
+*/output.json
+reports/
+log/
+traces.txt
 # Android Studio 3 in .gitignore file.
 .idea/caches
 .idea/modules.xml
